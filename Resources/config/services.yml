@@ -2,8 +2,6 @@ services:
     ckfinder.connector.auth:
         class: '%ckfinder.connector.auth.class%'
         public: true
-        calls:
-            - [setContainer, ['@service_container']]
 
     ckfinder.connector.factory:
         class: '%ckfinder.connector.factory.class%'
